@@ -1,0 +1,124 @@
+*{
+    margin:auto;
+    padding: 0;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body, .container, .bg2{min-height: 100%;}
+body, .container, .bg2{height: 100vh;}
+
+.container{
+    background-image: url('images/code.jpg');
+    background-color: black;
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .static-txt{
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height:90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li{
+    color: #e6f2fa;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 9s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+    
+}
+
+.dynamic-txts li span{
+    position: relative;
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    opacity: 1;
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.62), rgba(60, 91, 110 , 0.80)),
+    url('images/code.jpg');
+    background-attachment: fixed;
+    border-left: 2px solid #e6f2fa;
+    animation: typing 2.25s steps(17) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 120%;
+    }
+}
+
+.bg2{
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.62), rgba(60, 91, 110 , 0.80)),
+    url('images/code.jpg');
+
+}
+
+.menu ul{
+    font-size: 20px;
+    display: inline-flex;
+    margin: 50px;
+}
+
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.menu ul li a{
+    list-style: none;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 60px;
+    margin-top: -20px;
+    margin-right: 48px;
+}
+
+.active{
+    color:#bce0f7  !important;
+}
+
+.banner{
+
+    left: 130px;
+    position: absolute;
+    color: white;
+}
+
+
+.banner p{
+    width: 650px;
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+    list-style: 25px;
+    color: #e6f2fa;
+}
