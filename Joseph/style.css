@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
 }
-<<<<<<< HEAD
 
 html, body, .container, .bg2{min-height: 100%;}
 body, .container, .bg2{height: 100vh;}
@@ -68,23 +67,13 @@ body, .container, .bg2{height: 100vh;}
     100%{
         left: 120%;
     }
-=======
-.container{
-    width: 100%;
-    height: 100%;
->>>>>>> ac5e3e5b17e25560ad48ce37ce03402a1b88ce3f
 }
 
 .bg2{
     background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, 0.62), rgba(60, 91, 110 , 0.80)),
     url('images/code.jpg');
-<<<<<<< HEAD
 
-=======
-    width: 100%;
-    height: 100%;
->>>>>>> ac5e3e5b17e25560ad48ce37ce03402a1b88ce3f
 }
 
 .menu ul{
@@ -119,42 +108,17 @@ body, .container, .bg2{height: 100vh;}
 }
 
 .banner{
-<<<<<<< HEAD
 
-=======
-    width: 80%;
-    height: 70%;
-    top: 25%;
->>>>>>> ac5e3e5b17e25560ad48ce37ce03402a1b88ce3f
     left: 130px;
     position: absolute;
     color: white;
 }
 
-<<<<<<< HEAD
 
 .banner p{
     width: 650px;
     font-size: 20px;
     margin: 20px 0px 0px 0px;
-=======
-.app-text{
-    width: 50%;
-    float: left;
-}
-
-.app-text h1{
-    font-size: 43px;
-    width: 640px;
-    position: relative;
-    margin-left: 40px;
-}
-
-.app-text p{
-    width: 650px;
-    font-size: 15px;
-    margin: 30px 0 30px 40px;
->>>>>>> ac5e3e5b17e25560ad48ce37ce03402a1b88ce3f
     list-style: 25px;
     color: #e6f2fa;
 }
