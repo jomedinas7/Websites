@@ -9,7 +9,13 @@ body, .container, .bg2{height: 100vh;}
 
 .container{
     background-image: url('images/code.jpg');
-    background-color: black;
+}
+
+.banner .title p{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0 20px -10px;
 }
 
 .wrapper{
@@ -18,8 +24,9 @@ body, .container, .bg2{height: 100vh;}
 
 .wrapper .static-txt{
     color: white;
+    margin-left: -5px;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .wrapper .dynamic-txts{
@@ -30,10 +37,10 @@ body, .container, .bg2{height: 100vh;}
 }
 
 .dynamic-txts li{
-    color: #e6f2fa;
+    color: #325967;
     list-style: none;
     font-size: 60px;
-    font-weight: 500;
+    font-weight:900;
     position: relative;
     top: 0;
     animation: slide 9s steps(4) infinite;
@@ -57,7 +64,7 @@ body, .container, .bg2{height: 100vh;}
     width: 100%;
     opacity: 1;
     background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.62), rgba(60, 91, 110 , 0.80)),
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.70), rgba(60, 91, 110 , 0.80)),
     url('images/code.jpg');
     background-attachment: fixed;
     border-left: 2px solid #e6f2fa;
@@ -71,7 +78,7 @@ body, .container, .bg2{height: 100vh;}
 
 .bg2{
     background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.62), rgba(60, 91, 110 , 0.80)),
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.70), rgba(60, 91, 110 , 0.80)),
     url('images/code.jpg');
 
 }
@@ -104,7 +111,7 @@ body, .container, .bg2{height: 100vh;}
 }
 
 .active{
-    color:#bce0f7  !important;
+    color:#325967  !important;
 }
 
 .banner{
@@ -117,8 +124,17 @@ body, .container, .bg2{height: 100vh;}
 
 .banner p{
     width: 650px;
-    font-size: 20px;
-    margin: 20px 0px 0px 0px;
+    font-size: 35px;
+    margin: 40px 0px 0px 0px;
     list-style: 25px;
-    color: #e6f2fa;
+    color: white;
+    font-weight: 500;
+}
+
+.bullets p{
+    width: 500px;
+    font-size: 20px;
+    margin: 40px 0px 0px 0px;
+    color: white;
+    font-weight: 500;
 }
