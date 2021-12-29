@@ -84,40 +84,54 @@ html{
 .projects{
     background-color: #778472;
     margin: 0 100px;
-    margin-top: 32px;
     padding: 88px 6.395348837% 32px 6.395348837%;
-    position: relative;
+}
+
+.contact{
+    background-color: #274C77;
+    margin: 0 100px;
+    padding: 88px 6.395348837% 32px 6.395348837%;
 }
 
 .section-title{
-    position: absolute;
-    margin-left: 34%;
-    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    margin-top: -50px;
     font-weight: 800;
     font-size: 70px;
 }
 
 .about .section-title{
+    position: absolute;
+    margin-left: 34%;
+    margin-top: 1rem;
     color: #778472;
     opacity: 60%;
 }
 
-.projects .section-title{
+.projects, .contact .section-title{
     color: white;
 }
 
 .section-sub{
+    display: block;
+    text-align: center;
+    margin-top: -30px;
+    font-weight: 400;
+    font-size: 34px;
+    color: #E7EBEF;
+}
+
+.about .section-sub{
+    color: #274C77;
     position: absolute;
     margin-top: 70px;
     margin-left: 37%;
-    font-weight: 400;
-    font-size: 34px;
-    color: #274C77;
 }
 
 .vl {
     border-left: 4px solid #778472;
-    height: 30px;
+    height: 60px;
     position: absolute;
     margin-left: -10px;
 }
@@ -175,7 +189,7 @@ html{
     }
 }
 
-.about .columns{
+.columns{
     width: min(90%, 85rem);
     display: grid;
     grid-template-columns: column;
@@ -188,32 +202,37 @@ html{
 }
 
 .project{
-    padding-bottom: 2rem;
     text-align: center;
     background-color: white;
 }
 
 
 .p-title{
-    padding: 2rem;
+    color: black;
+    font-size: 20px;
+    padding: 1rem;
 }
 
 .view{
+    color: #000;
     background-color: #E7EBEF;
-    flex: auto;
-    text-align: center;
+    display: block;
+    font-size: 20px;
+    line-height: 3em;
+    width: 100%;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .wrapper {
-    margin-top: 5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
     grid-auto-rows: minmax(100px, auto);
   }
   .one {
-    grid-column: 1;
-    grid-row: 1 / 4;
+    grid-column: 1/2;
+    grid-row: 1 / 5;
   }
   .two {
     grid-column: 2 / 3;
@@ -221,8 +240,70 @@ html{
   }
   .three {
     grid-column: 2 / 3;
-    grid-row: 2 / 5;
+    grid-row: 3 / 5;
   }
+
+  .contact-body {
+    position: relative;
+    z-index: 2;
+    margin-top: -30px;
+    padding-bottom: 50px;
+    background-color: #f8f8f8;
+}
+
+.follow-me {
+    font-size: 18px;
+    padding-right: 12rem;
+    width: 50%;
+    margin-right: 12rem;
+}
+
+.follow-me ul {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.follow-me li {
+    height: 100%;
+}
+
+.follow-me li a {
+    line-height: 5rem;
+}
+
+.follow-me a, svg {
+    vertical-align: middle;
+    display: inline-block;
+    padding: .5rem;
+    color: #778472;
+    text-decoration: none;
+}
+
+
+.follow-me svg {
+    fill: #778472;
+    max-width: 70px;
+}
+
+.container{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    padding: 2rem;
+}
+
+
+.submit{
+    float: right;
+    background-color: #778472;
+    border: solid;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: white;
+}
 
 header{
     padding: 1em 0 5em;
@@ -255,4 +336,19 @@ nav a:focus{
 
 section{
     padding: 3em 1em;
+}
+
+input{
+    border:solid 1px;
+    border-color: #D0D4D9;
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+}
+
+textarea{
+    border:solid 1px;
+    border-color: #D0D4D9;
+    border-radius: 10px; 
+    width: 500px;
 }
