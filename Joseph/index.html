@@ -1,66 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Joseph Medina - Sandoval </title>
-    <link rel="icon" href="images/coding.png">
-    <script src="https://kit.fontawesome.com/c653cb155b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      </style>    <script src="https://kit.fontawesome.com/c653cb155b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>
-    <div class="container">
-        <div class='bg2'>
-            <div class="menu">
-                <ul>
-                    <li class="logo"><img src="images/coding.png"></li>
-                    <li class="active">Home</li>
-                    <li>
-                        <a href="portfolio.html" target="_self">Portfolio</a>
-                    </li>
-                    <li>
-                       <a href="projects.html" target="_self">Projects</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" target="_self">Contact</a>
-                    </li>
+    <main>
+        <section class="hero">
+            <header>
+                <img class="logo" src="images/logo_text_right.svg">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
+                </nav>
+            </header>
+            <div class="intro-card">
+                <p class="first"> Hola, I'm Joseph! 👋 </p>
+                <h1 class="title"> I'm a 
+                    <span class="emphasis"> UI/UX Designer</span>
+                    and
+                    <div class="title-wrapper">
+                        <ul class="dynamic-txts">
+                            <li><span>Software Engineer</span></li>
+                            <li><span>Problem Solver</span></li>
+                            <li><span>Aspiring Super-Hero</span></li>
+                        </ul> 
+                    </div>  
+                </h1>
+                <h2 class="subtitle"> Let's create something 
+                    <span style="font-weight: bolder;">awesome</span>
+                together!</h2>
             </div>
-            <div class="banner">
-                <div class="title">
-                    <p>Hi, I'm Joseph</p>
+            <img class="me" src="images/me.png">
+        </section>
+        <section class="about" id="about">
+            <header>
+                <h1 class="section-title">ABOUT ME</h1>
+                <h2 class="section-sub">More than a PNG</h2>
+            </header>
+            <div class="quote">
+                <div class="vl"></div>
+                <p>
+                    “A jack of all trades is a master of none,<br>
+                    but oftentimes better than a master of one.” - Ye Olde Proverb
+                </p>
+            </div>
+            <div class="text-body">
+                Throughout my journey studying and practicing Computer Science, I’ve delved into a lot of the areas in the field.
+                I’ve built and programmed robots, managed a feature through to launch for MS Word, and designed and coded a cross-platform mobile app.
+                Despite this, I’ve always had a soft spot for art and design.
+                As of late, I’ve found UX Developement and have thrown myself as it full-force.
+                I even landed a UX internship with the 17th largest city in the US, <span style="font-weight: 700;">El Paso, Texas</span> (A.K.A. my hometown).
+            </div>
+            <div class="columns">
+                <div>
+                    <img src="images/Work.png">
                 </div>
-                <div class="wrapper">
-                    <div class="static-txt">I am a</div>
-                    <ul class="dynamic-txts">
-                        <li><span>Programmer</span></li>
-                        <li><span>Designer</span></li>
-                        <li><span>Problem Solver</span></li>
-                        <li><span>Computer Scientist</span></li>
-                    </ul> 
-                </div>  
-                <p> 
-                    I have a passion for designing interesting and meaningful user experiences that help solve modern problems. </p>
-                <div class="bullets">
-                    <p>
-                        <i class="fas fa-user-graduate"></i>
-                        Senior Undergrad in Computer Science at The University of Texas at El Paso (UTEP)
-                    </p>
-                    <p>
-                        <i class="fas fa-briefcase"></i>
-                        UX Intern at The City of El Paso in the UX Division - Present
-                    </p>    
-                    <p>
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        Teaching Assistant at UTEP CS Department - Present
-                    </p>
-                    <p>
-                        <i class="fab fa-microsoft"></i>
-                        Product Management Intern - Summer 2021 
-                        <br>
-                        Explorer Intern - Summer 2020
-                    </p>   
+                <div>
+                    <img src="images/skills.png">
                 </div>
             </div>
-        </div>
+        </section>
+        <div class="divider"></div>
+        <section class="projects" id="projects">
+            <header>
+                <h1 class="section-title">PROJECTS</h1>
+                <h2 class="section-sub">What's Poppin'</h2>
+            </header>
+            <div class="wrapper">
+                    <div class="one">
+                        <div class="project">
+                                <img src="images/thumbnail2.png" alt="Preview of a website created for a garden coaching startup">
+                                <h2 class="p-title">DateNite - Identity, Architecture, and UI</h2>
+                                <a href=# class="view">View project</a>
+                        </div>      
+                    </div>
+                    <div class="two">
+                        <div class="project">
+                                <img src="images/thumbnail1.png" alt="Preview of a design created for a poetry website">
+                                <h2 class="p-title">Making a Name for Myself - Researching, Planning, and Creating a Website</h2>
+                                <a href=# class="view">View project</a>            
+                        </div>      
+                    </div>
+                    <div class="three">
+                        <div class="project">
+                            <img src="images/clock.png" alt="Preview of a landing page designed for Scroll">
+                            <h2 class="p-title" >We're just getting started</h2>
+                            <a class="view">More coming soon</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
